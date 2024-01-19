@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 2</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <!--                canvas               -->
+    <div>
+        <canvas id="can" width="400" height="400" style="background-color: cadetblue;"></canvas>
+    </div>
+    <hr />
+    <!--                map                   -->
+    <button id="getMap">map</button>
+    <button id="locationinfo" disabled style="float: right;">location info</button>
+    <div>
+    <table>
+            <tr style="background-color: green; color: white;">
+                <td>lattitude</td>
+                <td>longitude</td>
+                <td>time</td>
+            </tr>
+            <tr>
+                <td id="lan"></td>
+                <td id="long"></td>
+                <td id="time"></td>
+            </tr>
+    </table>
+    <div id="map"></div>
+    </div>
+    <hr />
+    <!--                svg                                   -->
+    <svg width="400" height="400" style="background-color:cadetblue;">
+        <line x1="100" y1="30" x2="100" y2="90" stroke="red" stroke-width="10" stroke-linecap="butt"/>
+        <g id="shapes">
+            <circle cx="100" cy="10" r="10"/>
+        </g>
+        <use xlink:href="#shapes" fill="red"/>
+        <line x1="90" y1="30" x2="160" y2="30" stroke="red" stroke-width="10" />
+        <line x1="120" y1="30" x2="120" y2="100" stroke="red" stroke-width="10" />
+        <line x1="140" y1="30" x2="140" y2="100" stroke="red" stroke-width="10" stroke-linecap="square"/>
+        <g id="shapes2">
+            <circle cx="140" cy="30" r="10"/>
+        </g>
+        <use xlink:href="#shapes2" fill="white"/>
+   </svg>
+
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>

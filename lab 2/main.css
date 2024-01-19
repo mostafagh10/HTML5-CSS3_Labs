@@ -1,0 +1,17 @@
+#map {
+    height: 400px;
+    width: 400px;
+  }
+  table{
+    display: none;
+    padding: 10px;
+  }
+  tr,td{
+    border: 1px solid black;
+  }
+  button{
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+  }
